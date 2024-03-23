@@ -1,10 +1,10 @@
-package src;
 import java.util.HashMap;
 import java.util.Map;
 
-public class translate {
+public class braille_to_text {
 
     private static final Map<String, String> brailleToTextMap = createBrailleToTextMap();
+
     // create numbers map
     private static final Map<String, String> brailleToNumbersMap = createBrailleToNumbersMap();
 
@@ -50,19 +50,6 @@ public class translate {
         map.put("1346", "x");
         map.put("13456", "y");
         map.put("1356", "z");
-
-        // numbers
-        map.put("3456-1", "1");
-        map.put("3456-12", "2");
-        map.put("3456-14", "3");
-        map.put("3456-145", "4");
-        map.put("3456-15", "5");
-        map.put("3456-124", "6");
-        map.put("3456-1245", "7");
-        map.put("3456-125", "8");
-        map.put("3456-24", "9");
-        map.put("3456-245", "0");
-        
         return map;
     }
 
